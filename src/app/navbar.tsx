@@ -1,5 +1,5 @@
 import Image from "next/image";
-import logo from "./UdonSwapLogo.png";
+import logo from "./UdonSwapLogo.png"
 import navStyle from "./navbar.module.scss";
 import Link from "next/link";
 
@@ -11,7 +11,7 @@ export default function Navbar() {
           <Image
             className={navStyle.smartlogportal}
             src={logo}
-            alt="not foundd"
+            alt="not found"
           />
         </Link>
       </div>
