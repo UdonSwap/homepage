@@ -4,11 +4,33 @@ import "./globals.css";
 
 const poppins = Poppins({ subsets: ["latin"],weight:['400'] });
 
-
-export const metadata: Metadata = {
+export const metadata = {
+  metadataBase: new URL('https://udonswap.org/'),
   title: "UdonSwap",
-  description: "Crafting Seamless Trades, Bowl by Bowl",
-  };
+  description: "A DEX Where Your Assets Flow As Smoothly As Music",
+    openGraph: {
+      title: "UdonSwap",
+      description: "A DEX Where Your Assets Flow As Smoothly As Music",
+      url: "https://udonswap.org/",
+      siteName: "UdonSwap",
+      images: [
+        {
+          url:"https://gateway.lighthouse.storage/ipfs/QmQgtmCNXCgAywPcqofYKWAqU5Tb1YWYKtCYjLuio6uLgT", // Must be an absolute URL
+          width: 800,
+          height: 600,
+        },
+        {
+              url: "https://gateway.lighthouse.storage/ipfs/QmQgtmCNXCgAywPcqofYKWAqU5Tb1YWYKtCYjLuio6uLgT", // Must be an absolute URL
+              width: 1800,
+              height: 1600,
+              alt: "My custom alt",
+            },
+        
+      ],
+      locale: "en_US",
+      type: "website",
+    },
+};
 
 
 export default function RootLayout({
