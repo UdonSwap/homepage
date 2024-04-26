@@ -1,11 +1,8 @@
 // pages/index.js
 import Image from "next/image";
 import styles from "./page.module.scss";
-import flower from "./flower.png";
 import star from "./star.svg";
-import udonswap from "./Udonswap.gif";
 import Navbar from "./navbar";
-import clip from "./UdonswapVideo.mp4";
 
 export default function Home() {
   return (
@@ -47,9 +44,7 @@ export default function Home() {
           </div>
         </div>
       </main>
-      <div className={styles.flower}>
-        {/* <Image src={flower} alt="Box Image" className={styles.img} /> */}
-      </div>
+      <div className={styles.flower}></div>
     </>
   );
 }
