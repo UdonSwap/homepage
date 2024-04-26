@@ -1,8 +1,11 @@
 // pages/index.js
 import Image from "next/image";
 import styles from "./page.module.scss";
+import flower from "./flower.png";
 import star from "./star.svg";
+import udonswap from "./Udonswap.gif";
 import Navbar from "./navbar";
+import clip from "./UdonswapVideo.mp4";
 
 export default function Home() {
   return (
@@ -26,12 +29,11 @@ export default function Home() {
         <div className={styles.boxContainer2}>
           <div className={styles.left}>
             <video
+              src="https://gateway.lighthouse.storage/ipfs/QmZRZDhMr3zgh5LLUzQJEodi4CApfxw3hRGpkv4rGHsVa4"
               autoPlay
               loop
-              controls={false}
               className={styles.tokenImg}
-              src="https://gateway.lighthouse.storage/ipfs/QmZRZDhMr3zgh5LLUzQJEodi4CApfxw3hRGpkv4rGHsVa4"
-            ></video>
+            />
           </div>
 
           <div className={styles.right}>
@@ -44,7 +46,9 @@ export default function Home() {
           </div>
         </div>
       </main>
-      <div className={styles.flower}></div>
+      <div className={styles.flower}>
+        {/* <Image src={flower} alt="Box Image" className={styles.img} /> */}
+      </div>
     </>
   );
 }
